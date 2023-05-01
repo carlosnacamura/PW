@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Pixel;
+    src: url(dogica.ttf);
+    transition: 1s;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Pixel;
+}
+body {
+    background-image: linear-gradient(rgb(110, 226, 110),black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+.container {
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 80%;
+    background-color: white;
+    border-radius: 40px;
+    padding: 21px;
+    box-shadow: 6px -9px 10px black;
+    position: relative;
+    z-index: 2;
+}
+.form_header {
+     display: flex;
+     justify-content: space-around;
+}
+.form_header img {
+    width: 60px;
+}
+h1 {
+    font-size: 50px;
+    background-image: linear-gradient(40deg, blue,red,rgb(146, 146, 226),green);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradiente 15s linear alternate infinite;
+}
+@keyframes gradiente {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 300%;
+    }
+}
+.form_main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.dados_pessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+p {
+    font-size: 30px;
+}
+.informacoes input {
+    border: none;
+    border-bottom: 3px solid red;
+    height: 20px;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: 1s;
+}
+.informacoes input:hover {
+    border-bottom: 3px solid blue;
+}
+.generos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form_main img {
+    width: 60px;
+}
+.curso {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.comandos {
+    display: flex;
+    justify-content: space-around;
+}
+.comandos input{
+    padding: 30px;
+    background-color: white;
+    transition: 1s; 
+}
+.comandos input:hover {
+    background-color: black;
+    color: white;
+}
+.squares li{
+    background-color: rgb(6,9, 3,0.6);
+   width: 40px;
+   height: 40px;
+   animation: flutuar 6s infinite linear;
+   position: absolute;
+   bottom: -118%;
+   z-index: 1;
+   display: block;
+}
+@keyframes flutuar {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1690px) rotate(960deg);
+    }
+}
+
+
